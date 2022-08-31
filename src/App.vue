@@ -4,7 +4,9 @@
 import HelloWorld from "./components/HelloWorld.vue"
 
 const clickBtn = async () => {
-  const response = await fetch("http://localhost:6069/ingredients")
+  const response = await fetch(
+    "https://moon-server-sooty.vercel.app/ingredients"
+  )
   const result = await response.json()
   console.log(result)
 }
